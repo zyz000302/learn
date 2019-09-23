@@ -16,3 +16,12 @@ CREATE TABLE `user` (
 ALTER TABLE `user` ADD UNIQUE (`username`);
 ALTER TABLE `user` ADD UNIQUE (`email`);
 ALTER TABLE `user` ADD UNIQUE (`phone`);
+
+DROP TABLE IF EXISTS `hospital`;
+CREATE TABLE `hospital` (
+  `pnumber` bigint(20) NOT NULL AUTO_INCREMENT,
+  `pname` varchar(50) DEFAULT NULL ,
+  `sex` varchar(255) DEFAULT NULL,
+  `age` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`pnumber`)
+);
